@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    
+    <h1>Server Data</h1>
+    <p>
+      <span id="latitude"></span>&deg;<br />
+      <span id="longitude"></span>&deg;
+    </p>
+    <div id='contact-form'>
+      <h3>Contacteaza-ma</h3>
+         <form>
+         
+          <div id='contact'>
+              <div className='field'>
+                  <label>Numele tau</label>
+                  <input id="name" type="text" name='username' placeholder='Numele tau' required/>
+              </div>
+              <div className='field'>
+                  <label>E-mail</label>
+                  <input id="email" type="email" name='email' placeholder='Email' required />
+              </div>
+              <div className='field'>
+                  <label >Telefon</label>
+                  <input type="tel" id="phone" name="phone" placeholder="Telefon" pattern="[0-9]{10}"  required/>
+              </div>
+              <div className='field'>
+                  <label>Mesajul tau</label>
+                  <textarea name="mesaj" id="mesaj" cols="30" rows="10" ></textarea>
+              </div>
+              <div><button id='contact-button' >Trimite</button></div>
+          </div>
+         </form>
+         </div>
+   <script src="./contact.js"></script>
+   <script src="./getContact.js"></script>
+  </body>
+</html>
